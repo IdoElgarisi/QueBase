@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/QueBase/static/css/main.fdee1dfd.css",
+    "main.js": "/QueBase/static/js/main.0f48e5a5.js",
+    "static/js/787.97eef493.chunk.js": "/QueBase/static/js/787.97eef493.chunk.js",
+    "static/media/Bass.mp3": "/QueBase/static/media/Bass.c963e18431af2c197c14.mp3",
+    "static/media/Drums.mp3": "/QueBase/static/media/Drums.62a307282433459c7e1d.mp3",
+    "static/media/Guitar.mp3": "/QueBase/static/media/Guitar.83296e0cb8861e56e6ec.mp3",
+    "static/media/Keys.mp3": "/QueBase/static/media/Keys.dd48a31ffcffc13940d4.mp3",
+    "index.html": "/QueBase/index.html",
+    "main.fdee1dfd.css.map": "/QueBase/static/css/main.fdee1dfd.css.map",
+    "main.0f48e5a5.js.map": "/QueBase/static/js/main.0f48e5a5.js.map",
+    "787.97eef493.chunk.js.map": "/QueBase/static/js/787.97eef493.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdee1dfd.css",
+    "static/js/main.0f48e5a5.js"
+  ]
+}
