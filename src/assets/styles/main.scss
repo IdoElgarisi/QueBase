@@ -1,0 +1,22 @@
+// Setup
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+@import "setup/typography";
+
+// Basics
+@import "basics/helpers";
+@import "basics/layout";
+@import "basics/base";
+
+// Cmps
+@import "cmps/tool-bar";
+@import "cmps/channels-list";
+@import "cmps/scroll-bar";
+@import "cmps/project-window";
+@import "cmps/mixer-window";
+
+
+//Views
+@import "pages/project-page";
+

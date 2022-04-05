@@ -1,0 +1,36 @@
+.project-window-container {
+    // height: calc(100vh - 100px);
+    height: 50vh;
+    width: calc(100% - 150px);
+    background-color: lighten($color: #444, $amount: 15%);
+    border-radius: 4px;
+    .project-window {
+        height: 100%;
+        width: 100%;
+        .event-line-container {
+            width: calc(100% - 6px);
+            margin-inline-start: 6px;
+            .event-line {
+                width: 100%;
+                border-radius: 4px;
+                height: 35px;
+                border: 1px solid #444;
+                background-color: lightblue;
+                margin-bottom: 1px;
+                &.red {
+                    color: black;
+                    background-color: lighten($color: $bsDanger, $amount: 10%);
+                }
+                &.blue {
+                    background-color: lighten($color: $bsInfo, $amount: 10%);
+                }
+                &.yellow {
+                    background-color: lighten($color: $bsWarning, $amount: 10%);
+                }
+                &.green {
+                    background-color: lighten($color: $bsSuccess, $amount: 10%);
+                }
+            }
+        }
+    }
+}

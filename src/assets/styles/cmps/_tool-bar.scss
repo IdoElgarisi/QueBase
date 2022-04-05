@@ -1,0 +1,53 @@
+.tool-bar-container {
+    width: 100%;
+    // border: 1px solid;
+    .tool-bar {
+        width: 300px;
+        button {
+            cursor: pointer;
+            width: 25%;
+            height: 30px;
+            border-radius: 4px;
+            border: 1px solid;
+            background-color: lighten($color: #444, $amount: 30%);
+        }
+        .loop-btn {
+            &.on {
+                background-color: rgb(223, 30, 223);
+            }
+            &.off {
+                background-color: lighten($color: #444, $amount: 30%);
+            }
+        }
+        .play-btn {
+            border: 1px solid;
+            &.on {
+                // background-color: rgb(13, 196, 13);
+                background-color: $bsSuccess;
+            }
+            &.off {
+                background-color: lighten($color: #444, $amount: 30%);
+            }
+        }
+        .pause-btn {
+            border: 1px solid;
+            &.on {
+                background-color: $bsInfo;
+            }
+            &.off {
+                background-color: lighten($color: #444, $amount: 30%);
+            }
+        }
+        .stop-btn {
+            border: 1px solid;
+            &.on {
+                background-color: $bsDanger;
+            }
+            &.off {
+                background-color: lighten($color: #444, $amount: 30%);
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,37 @@
+.channels-list-container {
+    height: 50vh;
+    // height: calc(100vh - 100px);
+    width: 150px;
+    background-color: #555;
+    border-radius: 4px;
+    .channel-info {
+        width: 100%;
+        border-radius: 4px;
+        height: 35px;
+        color: white;
+        border: 1px solid #444;
+        background-color: lighten($color: #444, $amount: 5%);
+        margin-bottom: 1px;
+        &.red {
+            background-color: $bsDanger;
+        }
+        &.blue {
+            background-color: $bsInfo;
+        }
+        &.yellow {
+            background-color: $bsWarning;
+        }
+        &.green {
+            background-color: $bsSuccess;
+        }
+    }
+    .mute-btn {
+        border: none;
+        border-radius: 2px;
+        margin-inline-end: 5px;
+        cursor: pointer;
+        &.on {
+            background-color: rgb(236, 236, 26);
+        }
+    }
+}

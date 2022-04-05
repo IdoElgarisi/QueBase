@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    padding:0;
+    margin: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+input {
+  margin: 0;
+  padding: 0;
+}
+ul { list-style-type: none;}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+// ::selection {
+    // background-color: $clr1;
+    // color: $clr6;
+// }
+.fade-in{animation:fade-in .3s cubic-bezier(.39,.575,.565,1.000) both}
+@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
