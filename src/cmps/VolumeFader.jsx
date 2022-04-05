@@ -18,10 +18,9 @@ const VolumeFader = ({ channel }) => {
                         channel ? channel.audio.volume = event.target.valueAsNumber : finalVolume = event.target.valueAsNumber
                     }}
                 />
-                <button onClick={() => setMuted(m => !m)}>
-                    {/* {muted ? "muted" : "unmuted"} */}
-                    M
-                </button>
+                {/* <button onClick={() => setMuted(m => !m)}> */}
+                {/* {muted ? "muted" : "unmuted"} */}
+                {/* </button> */}
             </section>
             <section className="volume-data flex column align-center">
                 <div>
