@@ -19,6 +19,7 @@ const ChannelInfo = ({ channel, chNum, isPlaying, toggleMute, isStoping, isLoopO
     }, [channel?.audio.ended])
 
     useEffect(() => {
+
         if (isLoopOn) channel.audio.loop = true
         else channel.audio.loop = false
     }, [isLoopOn])
@@ -28,12 +29,16 @@ const ChannelInfo = ({ channel, chNum, isPlaying, toggleMute, isStoping, isLoopO
     }
 
     return (
-        <div className={`channel-info flex space-between align-center ${channel.colour}`}>
-            <div className="flex align-center">
-                <p className="channel-number">{chNum}</p>
-                <p>{channel.channelName}</p>
+        <div className={`channel-line flex space-between align-center ${channel.colour}`}>
+            <div className="channel-info  flex align-center">
+                <div className="channel-number-container flex align-center justify-center">
+                    <p className="channel-number">{chNum}</p>
+                </div>
+                <div className="channel-name-container flex align-center justify-center">
+                    <p>{channel.channelName}</p>
+                </div>
             </div>
-            <div className="mute-btn-container">
+            <div className="mute-btn-container flex align-center justify-center">
                 <button className={`mute-btn ${channel.isMuteOn ? "on" : "off"}`} onClick={onToggleMute}>M</button>
             </div>
         </div>

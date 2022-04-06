@@ -4,14 +4,28 @@
     width: 150px;
     background-color: #555;
     border-radius: 4px;
-    .channel-info {
+    .channel-line {
         width: 100%;
         border-radius: 4px;
         height: 35px;
-        color: white;
         border: 1px solid #444;
         background-color: lighten($color: #444, $amount: 5%);
         margin-bottom: 1px;
+        padding: 0 5px;
+        font-size: 0.875rem;
+        .channel-info {
+            width: 50%;
+            .channel-number-container {
+                color: white;
+                border: none;
+                width: 25%;
+                background-color: #555;
+                border-radius: 4px;
+            }
+            .channel-name-container {
+                width: 75%;
+            }
+        }
         &.red {
             background-color: $bsDanger;
         }
@@ -28,7 +42,7 @@
     .mute-btn {
         border: none;
         border-radius: 2px;
-        margin-inline-end: 5px;
+        font-size: 0.75rem;
         cursor: pointer;
         &.on {
             background-color: rgb(236, 236, 26);
