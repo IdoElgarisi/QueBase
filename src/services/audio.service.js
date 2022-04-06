@@ -1,45 +1,99 @@
-import Drums from "../audio/Drums.mp3";
+import Kick from "../audio/Kick.mp3";
+import Snare from "../audio/Snare.mp3";
+import Hihat from "../audio/Hihat.mp3";
 import Bass from "../audio/Bass.mp3";
 import Guitar from "../audio/Guitar.mp3";
 import Keys from "../audio/Keys.mp3";
+import Synth from "../audio/Synth.mp3";
+import SynthBass from "../audio/SynthBass.mp3";
+import Glock from "../audio/Glock.mp3";
 
-const gChannels = [
-    {
-        channelId: "C101",
-        channelName: "Drums",
-        colour: "red",
-        isMuteOn: false,
-        isPlaying: false,
-        audio: Drums
-    },
-    {
-        channelId: "C102",
-        channelName: "Bass",
-        colour: "yellow",
-        isMuteOn: false,
-        isPlaying: false,
-        audio: Bass
-    },
-    {
-        channelId: "C103",
-        colour: "green",
-        channelName: "Guitar",
-        isMuteOn: false,
-        isPlaying: false,
-        audio: Guitar
-    },
-    {
-        channelId: "C104",
-        channelName: "Keys",
-        colour: "blue",
-        isMuteOn: false,
-        isPlaying: false,
-        audio: Keys
-    }
-]
 export const audioService = {
     getChannels
 }
-function getChannels() {
+async function getChannels() {
+    gChannels.map(channel => {
+        channel.audio = new Audio(channel.audio)
+        return Promise.resolve(channel)
+    })
+    Promise.all(gChannels).then((res) => {
+        return res
+    })
     return gChannels
 }
+function _makeId(length = 6) {
+    var txt = '';
+    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+    for (var i = 0; i < length; i++) {
+        txt += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+
+    return txt;
+}
+
+const gChannels = [
+    {
+        channelId: _makeId(),
+        channelName: "Kick",
+        colour: "red",
+        isMuteOn: false,
+        audio: Kick
+    },
+    {
+        channelId: _makeId(),
+        channelName: "Snare",
+        colour: "red",
+        isMuteOn: false,
+        audio: Snare
+    },
+    {
+        channelId: _makeId(),
+        channelName: "Hihat",
+        colour: "red",
+        isMuteOn: false,
+        audio: Hihat
+    },
+    {
+        channelId: _makeId(),
+        channelName: "Bass",
+        colour: "yellow",
+        isMuteOn: false,
+        audio: Bass
+    },
+    {
+        channelId: _makeId(),
+        colour: "green",
+        channelName: "Guitar",
+        isMuteOn: false,
+        audio: Guitar
+    },
+    {
+        channelId: _makeId(),
+        channelName: "Keys",
+        colour: "blue",
+        isMuteOn: false,
+        audio: Keys
+    },
+    {
+        channelId: _makeId(),
+        channelName: "Glock",
+        colour: "blue",
+        isMuteOn: false,
+        audio: Glock
+    },
+    {
+        channelId: _makeId(),
+        channelName: "SynthBass",
+        colour: "blue",
+        isMuteOn: false,
+        audio: SynthBass
+    },
+    {
+        channelId: _makeId(),
+        channelName: "Synth",
+        colour: "blue",
+        isMuteOn: false,
+        audio: Synth
+    }
+]

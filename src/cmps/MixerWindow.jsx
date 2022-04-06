@@ -10,7 +10,7 @@ const MixerWindow = ({ channels }) => {
                     return <VolumeFader channel={ch} key={idx} />
                 }) : ""}
             </div>
-            <MasterVolumeFader channels={channels} />
+            {/* <MasterVolumeFader channels={channels} /> */}
         </div>
     )
 }

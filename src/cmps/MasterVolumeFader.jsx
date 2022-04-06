@@ -6,7 +6,7 @@ const MasterVolumeFader = ({ channels }) => {
     const finalVolume = muted ? 0 : volume ** 2
 
     return (
-        <main className="volume-fader-container flex column align-center master">
+        <main className="volume-fader-container flex column align-center ">
             <section className="volume-fader flex">
                 <input
                     type="range"
@@ -22,7 +22,7 @@ const MasterVolumeFader = ({ channels }) => {
                     }}
                 />
             </section>
-            <section className="volume-data flex column align-center">
+            <section className="volume-data flex column align-center master">
                 <div>
                     <p>{finalVolume.toFixed(2)}</p>
                 </div>
