@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/QueBase/static/css/main.fdee1dfd.css",
-    "main.js": "/QueBase/static/js/main.7291855f.js",
-    "static/js/787.97eef493.chunk.js": "/QueBase/static/js/787.97eef493.chunk.js",
-    "static/media/Bass.mp3": "/QueBase/static/media/Bass.c963e18431af2c197c14.mp3",
-    "static/media/Drums.mp3": "/QueBase/static/media/Drums.62a307282433459c7e1d.mp3",
-    "static/media/Guitar.mp3": "/QueBase/static/media/Guitar.83296e0cb8861e56e6ec.mp3",
-    "static/media/Keys.mp3": "/QueBase/static/media/Keys.dd48a31ffcffc13940d4.mp3",
+    "main.css": "/QueBase/static/css/main.41799426.css",
+    "main.js": "/QueBase/static/js/main.5a202575.js",
+    "static/media/Bass.mp3": "/QueBase/static/media/Bass.c79e443bbddee8f70950.mp3",
+    "static/media/Glock.mp3": "/QueBase/static/media/Glock.a645f584789d746aed71.mp3",
+    "static/media/Guitar.mp3": "/QueBase/static/media/Guitar.cc652a0b9064e4e0d762.mp3",
+    "static/media/Hihat.mp3": "/QueBase/static/media/Hihat.567e42a2b7bdbb43ee65.mp3",
+    "static/media/Keys.mp3": "/QueBase/static/media/Keys.6cf66139a4a8767ec19d.mp3",
+    "static/media/Kick.mp3": "/QueBase/static/media/Kick.3acee341860158c9f96f.mp3",
+    "static/media/Snare.mp3": "/QueBase/static/media/Snare.812bf949c13c3f8eb291.mp3",
+    "static/media/Synth.mp3": "/QueBase/static/media/Synth.2915789bc88d6d1d3e52.mp3",
+    "static/media/SynthBass.mp3": "/QueBase/static/media/SynthBass.3b8ff80acc74ef93f525.mp3",
+    "static/media/Lato-Regular.ttf": "/QueBase/static/media/Lato-Regular.79164ee524feb6583a94.ttf",
     "index.html": "/QueBase/index.html",
-    "main.fdee1dfd.css.map": "/QueBase/static/css/main.fdee1dfd.css.map",
-    "main.7291855f.js.map": "/QueBase/static/js/main.7291855f.js.map",
-    "787.97eef493.chunk.js.map": "/QueBase/static/js/787.97eef493.chunk.js.map"
+    "main.41799426.css.map": "/QueBase/static/css/main.41799426.css.map",
+    "main.5a202575.js.map": "/QueBase/static/js/main.5a202575.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdee1dfd.css",
-    "static/js/main.7291855f.js"
+    "static/css/main.41799426.css",
+    "static/js/main.5a202575.js"
   ]
 }
