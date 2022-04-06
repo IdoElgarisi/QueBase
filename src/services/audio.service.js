@@ -84,7 +84,7 @@ const gChannels = [
     },
     {
         channelId: _makeId(),
-        channelName: "SynthBass",
+        channelName: "E.Bass",
         colour: "blue",
         isMuteOn: false,
         audio: SynthBass
