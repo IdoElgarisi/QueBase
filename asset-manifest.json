@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/QueBase/static/css/main.457d7789.css",
-    "main.js": "/QueBase/static/js/main.32e84c06.js",
+    "main.css": "/QueBase/static/css/main.761912ac.css",
+    "main.js": "/QueBase/static/js/main.c40feb1d.js",
     "static/media/Bass.mp3": "/QueBase/static/media/Bass.c79e443bbddee8f70950.mp3",
     "static/media/Glock.mp3": "/QueBase/static/media/Glock.a645f584789d746aed71.mp3",
     "static/media/Guitar.mp3": "/QueBase/static/media/Guitar.cc652a0b9064e4e0d762.mp3",
@@ -13,11 +13,11 @@
     "static/media/SynthBass.mp3": "/QueBase/static/media/SynthBass.3b8ff80acc74ef93f525.mp3",
     "static/media/Lato-Regular.ttf": "/QueBase/static/media/Lato-Regular.79164ee524feb6583a94.ttf",
     "index.html": "/QueBase/index.html",
-    "main.457d7789.css.map": "/QueBase/static/css/main.457d7789.css.map",
-    "main.32e84c06.js.map": "/QueBase/static/js/main.32e84c06.js.map"
+    "main.761912ac.css.map": "/QueBase/static/css/main.761912ac.css.map",
+    "main.c40feb1d.js.map": "/QueBase/static/js/main.c40feb1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.457d7789.css",
-    "static/js/main.32e84c06.js"
+    "static/css/main.761912ac.css",
+    "static/js/main.c40feb1d.js"
   ]
 }
