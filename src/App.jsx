@@ -60,12 +60,29 @@ const App = () => {
 
   const toggleSolo = async (channelId) => {
     const newChannels = channels.map(channel => {
-      if (channelId !== channel.channelId) {
-        channel.audio.muted = !channel.isMuteOn
-        channel.isMuteOn = !channel.isMuteOn
-      }
-      else if (channelId === channel.channelId) {
+      if (channelId === channel.channelId) {
         channel.isSoloOn = !channel.isSoloOn
+      }
+      if (channelId !== channel.channelId && !channel.isSoloOn) {
+        if (channels.some(channel => { return channel.isSoloOn })) {
+          channel.audio.muted = true
+          channel.isMuteOn = true
+        }
+      }
+      if (channel.isSoloOn) {
+        channel.audio.muted = false
+        channel.isMuteOn = false
+      }
+      if (!channel.isSoloOn) {
+        if (channels.some(channel => { return channel.isSoloOn })) {
+          channel.audio.muted = true
+          channel.isMuteOn = true
+        }
+        else {
+          channel.audio.muted = false
+          channel.isMuteOn = false
+
+        }
       }
       return Promise.resolve(channel)
     })
