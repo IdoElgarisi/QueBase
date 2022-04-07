@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/QueBase/static/css/main.c1ddc516.css",
-    "main.js": "/QueBase/static/js/main.c40feb1d.js",
+    "main.js": "/QueBase/static/js/main.7ad393a3.js",
     "static/media/Bass.mp3": "/QueBase/static/media/Bass.c79e443bbddee8f70950.mp3",
     "static/media/Glock.mp3": "/QueBase/static/media/Glock.a645f584789d746aed71.mp3",
     "static/media/Guitar.mp3": "/QueBase/static/media/Guitar.cc652a0b9064e4e0d762.mp3",
@@ -14,10 +14,10 @@
     "static/media/Lato-Regular.ttf": "/QueBase/static/media/Lato-Regular.79164ee524feb6583a94.ttf",
     "index.html": "/QueBase/index.html",
     "main.c1ddc516.css.map": "/QueBase/static/css/main.c1ddc516.css.map",
-    "main.c40feb1d.js.map": "/QueBase/static/js/main.c40feb1d.js.map"
+    "main.7ad393a3.js.map": "/QueBase/static/js/main.7ad393a3.js.map"
   },
   "entrypoints": [
     "static/css/main.c1ddc516.css",
-    "static/js/main.c40feb1d.js"
+    "static/js/main.7ad393a3.js"
   ]
 }
