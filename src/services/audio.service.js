@@ -38,6 +38,7 @@ const gChannels = [
         channelName: "Kick",
         colour: "red",
         isMuteOn: false,
+        isSoloOn: false,
         audio: Kick
     },
     {
@@ -59,6 +60,7 @@ const gChannels = [
         channelName: "Bass",
         colour: "yellow",
         isMuteOn: false,
+        isSoloOn: false,
         audio: Bass
     },
     {
@@ -66,6 +68,7 @@ const gChannels = [
         colour: "green",
         channelName: "Guitar",
         isMuteOn: false,
+        isSoloOn: false,
         audio: Guitar
     },
     {
@@ -73,6 +76,7 @@ const gChannels = [
         channelName: "Keys",
         colour: "blue",
         isMuteOn: false,
+        isSoloOn: false,
         audio: Keys
     },
     {
@@ -80,6 +84,7 @@ const gChannels = [
         channelName: "Glock",
         colour: "blue",
         isMuteOn: false,
+        isSoloOn: false,
         audio: Glock
     },
     {
@@ -87,6 +92,7 @@ const gChannels = [
         channelName: "E.Bass",
         colour: "blue",
         isMuteOn: false,
+        isSoloOn: false,
         audio: SynthBass
     },
     {
@@ -94,6 +100,7 @@ const gChannels = [
         channelName: "Synth",
         colour: "blue",
         isMuteOn: false,
+        isSoloOn: false,
         audio: Synth
     }
 ]

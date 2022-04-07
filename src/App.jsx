@@ -58,6 +58,22 @@ const App = () => {
 
   }
 
+  const toggleSolo = async (channelId) => {
+    const newChannels = channels.map(channel => {
+      if (channelId !== channel.channelId) {
+        channel.audio.muted = !channel.isMuteOn
+        channel.isMuteOn = !channel.isMuteOn
+      }
+      else if (channelId === channel.channelId) {
+        channel.isSoloOn = !channel.isSoloOn
+      }
+      return Promise.resolve(channel)
+    })
+    Promise.all(newChannels).then((res) => {
+      setChannels(res)
+    })
+  }
+
   return (
     <div className="App main-layout">
       <main className="project-page">
@@ -65,7 +81,7 @@ const App = () => {
         <div className="project-window flex">
           <div className="channels-list-container flex column align-center">
             {channels?.length && channels?.map((channel, idx) => {
-              return <ChannelInfo onStop={onStop} isLoopOn={isLoopOn} isStoping={isStoping} toggleMute={toggleMute} key={idx} isPlaying={isPlaying} channel={channel} chNum={(idx + 1)} />
+              return <ChannelInfo isSoloOn={channel.isSoloOn} toggleSolo={toggleSolo} onStop={onStop} isLoopOn={isLoopOn} isStoping={isStoping} toggleMute={toggleMute} key={idx} isPlaying={isPlaying} channel={channel} chNum={(idx + 1)} />
             })}
           </div>
           <ProjectWindow channels={channels ? channels : null} />
