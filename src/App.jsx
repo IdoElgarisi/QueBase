@@ -69,10 +69,6 @@ const App = () => {
           channel.isMuteOn = true
         }
       }
-      if (channel.isSoloOn) {
-        channel.audio.muted = false
-        channel.isMuteOn = false
-      }
       if (!channel.isSoloOn) {
         if (channels.some(channel => { return channel.isSoloOn })) {
           channel.audio.muted = true
@@ -83,6 +79,16 @@ const App = () => {
           channel.isMuteOn = false
 
         }
+      }
+      if (channel.isSoloOn) {
+        channels.forEach(ch => {
+          if (!ch.isSoloOn) {
+            ch.audio.muted = true
+            ch.isMuteOn = true
+          }
+        })
+        channel.audio.muted = false
+        channel.isMuteOn = false
       }
       return Promise.resolve(channel)
     })
@@ -103,7 +109,7 @@ const App = () => {
           </div>
           <ProjectWindow channels={channels ? channels : null} />
         </div>
-        <MixerWindow channels={channels ? channels : null} />
+        <MixerWindow toggleMute={toggleMute} toggleSolo={toggleSolo} channels={channels ? channels : null} />
         <ToolBar onPause={onPause} onPlay={onPlay} onStop={onStop} onToggleLoop={onToggleLoop} isLoopOn={isLoopOn} isPlaying={isPlaying} isStoping={isStoping} />
       </main>
     </div>

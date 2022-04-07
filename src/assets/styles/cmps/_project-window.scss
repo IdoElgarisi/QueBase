@@ -17,6 +17,7 @@
                 border: 1px solid #444;
                 background-color: lightblue;
                 margin-bottom: 1px;
+                padding-inline-start: 5px;
                 &.red {
                     color: black;
                     background-color: lighten($color: $bsDanger, $amount: 10%);

@@ -36,7 +36,7 @@ const gChannels = [
     {
         channelId: _makeId(),
         channelName: "Kick",
-        colour: "red",
+        color: "red",
         isMuteOn: false,
         isSoloOn: false,
         audio: Kick
@@ -44,28 +44,28 @@ const gChannels = [
     {
         channelId: _makeId(),
         channelName: "Snare",
-        colour: "red",
+        color: "red",
         isMuteOn: false,
         audio: Snare
     },
     {
         channelId: _makeId(),
         channelName: "Hihat",
-        colour: "red",
+        color: "red",
         isMuteOn: false,
         audio: Hihat
     },
     {
         channelId: _makeId(),
         channelName: "Bass",
-        colour: "yellow",
+        color: "yellow",
         isMuteOn: false,
         isSoloOn: false,
         audio: Bass
     },
     {
         channelId: _makeId(),
-        colour: "green",
+        color: "green",
         channelName: "Guitar",
         isMuteOn: false,
         isSoloOn: false,
@@ -74,7 +74,7 @@ const gChannels = [
     {
         channelId: _makeId(),
         channelName: "Keys",
-        colour: "blue",
+        color: "blue",
         isMuteOn: false,
         isSoloOn: false,
         audio: Keys
@@ -82,7 +82,7 @@ const gChannels = [
     {
         channelId: _makeId(),
         channelName: "Glock",
-        colour: "blue",
+        color: "blue",
         isMuteOn: false,
         isSoloOn: false,
         audio: Glock
@@ -90,7 +90,7 @@ const gChannels = [
     {
         channelId: _makeId(),
         channelName: "E.Bass",
-        colour: "blue",
+        color: "blue",
         isMuteOn: false,
         isSoloOn: false,
         audio: SynthBass
@@ -98,7 +98,7 @@ const gChannels = [
     {
         channelId: _makeId(),
         channelName: "Synth",
-        colour: "blue",
+        color: "blue",
         isMuteOn: false,
         isSoloOn: false,
         audio: Synth

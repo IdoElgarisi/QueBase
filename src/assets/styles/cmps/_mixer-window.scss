@@ -1,5 +1,5 @@
 .mixer-window-container {
-    height: 30vh;
+    height: 29vh;
     width: 100%;
     // width: calc(100% - 150px);
     // margin-inline-start: 150px;
@@ -8,9 +8,18 @@
         border: 1px solid;
         width: 60px;
         border-radius: 2px;
+        height: 150px;
+        .fader-btns-container {
+            width: 90%;
+            padding-top: 3px;
+            height: 30px;
+            .ops-btns {
+                width: 100%;
+            }
+        }
     }
     .volume-fader {
-        width: 100px;
+        width: 90px;
         transform: rotate(270deg);
         input {
             cursor: pointer;
@@ -20,14 +29,16 @@
             transform: rotate(90deg);
         }
         position: relative;
-        top: 35%;
+        top: 30%;
     }
     .volume-data {
         position: relative;
         top: 65%;
-        font-size: 0.875rem;
+        font-size: 0.675rem;
         width: 100%;
         border-radius: 3px;
+        height: 20px;
+        padding: 0 3px;
         &.red {
             background-color: $bsDanger;
         }

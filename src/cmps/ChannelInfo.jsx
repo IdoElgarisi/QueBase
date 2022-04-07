@@ -32,7 +32,7 @@ const ChannelInfo = ({ channel, chNum, isPlaying, toggleMute, isStoping, isLoopO
     }
 
     return (
-        <div className={`channel-line flex space-between align-center ${channel.colour}`}>
+        <div className={`channel-line flex space-between align-center ${channel.color}`}>
             <div className="channel-info  flex align-center">
                 <div className="channel-number-container flex align-center justify-center">
                     <p className="channel-number">{chNum}</p>
@@ -41,7 +41,7 @@ const ChannelInfo = ({ channel, chNum, isPlaying, toggleMute, isStoping, isLoopO
                     <p>{channel.channelName}</p>
                 </div>
             </div>
-            <div className="ops-bts flex align-center space-between">
+            <div className="ops-btns flex align-center space-between">
                 <div className="mute-btn-container flex align-center justify-center">
                     <button className={`mute-btn flex align-center justify-center ${channel.isMuteOn ? "on" : "off"}`} onClick={onToggleMute}><p>M</p></button>
                 </div>
